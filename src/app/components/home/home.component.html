@@ -1,0 +1,71 @@
+<h1>Seja bem vindo ao curso de Angular!</h1>
+<h4 class="text-danger">{{anuncio}}</h4>
+
+<div class="row">
+  <div class="col">
+    <app-card-produto
+    [foto]="foto"
+    [nomeProduto]="nomeProduto"
+    [promocao]="promocao"
+    [idProduto]="idProduto"
+    [dataValidade]="dataValidade"
+    [precoProduto]="precoProduto"
+
+    ></app-card-produto>
+  </div>
+
+  <div class="col">
+    <app-card-produto
+    foto="https://1.bp.blogspot.com/-Dy42UBkxXXc/U4P9llH1IWI/AAAAAAAAD-I/MT2evyWmGFw/s1600/imagens-imagens-paisagens-natureza-758ab5.jpg"
+    nomeProduto="Viagem para o Canada"
+    [promocao]="false"
+    [idProduto]="4"
+    dataValidade="2021-12-31"
+    [precoProduto]="1600.0"
+
+    ></app-card-produto>
+  </div>
+
+  <div class="col">
+    <app-card-produto
+    foto="https://th.bing.com/th/id/OIP.g0YzBOaL3jd1nuhNVLzmoAHaEK?pid=ImgDet&rs=1"
+    nomeProduto="Viagem à praia"
+    [promocao]="true"
+    [idProduto]="5"
+    dataValidade="2021-12-31"
+    [precoProduto]="1200.0"
+
+    ></app-card-produto>
+  </div>
+
+</div>
+  <!--aproximada proporção das fotos: 2048x1150
+    <div class="col">
+    <div class="card shadow">
+      <table class="table table-responsive table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Validade</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr *ngFor = "let prod of listarProdutos">
+              <td>{{prod.id}}</td>
+              <td>{{prod.nome}}</td>
+              <td>{{prod.validade | date: "shortDate"}}</td>
+              <td>{{prod.precoProduto | currency: "BRL"}}</td>
+              <td>
+                <button class="btn btn-success">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>-->
+
